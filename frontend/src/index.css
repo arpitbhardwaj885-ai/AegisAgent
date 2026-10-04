@@ -1,0 +1,80 @@
+:root {
+  /* Colors */
+  --bg-app: #040914;
+  --bg-surface: rgba(255, 255, 255, 0.02);
+  --bg-surface-hover: rgba(255, 255, 255, 0.05);
+  
+  --accent-primary: #00F0FF;
+  --accent-secondary: #8B5CF6;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #475569;
+  
+  --status-success: #10B981;
+  --status-warning: #F59E0B;
+  --status-error: #EF4444;
+
+  /* Typography */
+  --font-sans: 'Inter', 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism Card Utility */
+.glass-card {
+  background: var(--bg-surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* Glowing Button Utility */
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  color: var(--text-primary);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--bg-surface-hover);
+}
