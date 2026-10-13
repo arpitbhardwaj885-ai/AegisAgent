@@ -31,11 +31,12 @@
 - Implement Web3 wallet connection (e.g., MetaMask).
 - Create the "Discover Agents" interface.
 
-## Day 6: Frontend/Backend Integration
-- Connect frontend to backend APIs.
-- Display real-time (cached) agent data on the frontend.
-- Implement the "Evaluate" and "Verify" UI flows showing AI explanations.
-- Build the "Hire Agent" transaction flow.
+## Day 6: Agent Marketplace & Hiring Lifecycle
+- **Phase 5.1 & 5.1.1 (Completed)**: Trust Evaluation API & Semantics Audit.
+- **Phase 5.2 & 5.2.1 (Completed)**: Agent Discovery & Marketplace Read API with verified Monad Testnet contracts.
+- **Phase 5.3.1 (Current)**: Agent Hiring Lifecycle Architecture (Design-Only: state machine, participants, escrow boundary, security analysis).
+- **Phase 5.3.2 (Upcoming)**: Agent Hiring API & Escrow Smart Contract Implementation.
+- Build the "Hire Agent" transaction and escrow interaction flow.
 
 ## Day 7: End-to-End Testing & Polish
 - Run through the complete Core Product Loop: Discover -> Evaluate -> Verify -> Hire -> Execute -> Validate -> Update Reputation -> Recalculate Trust.
